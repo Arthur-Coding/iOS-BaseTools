@@ -1,0 +1,35 @@
+//
+//  PrefixHeader.pch
+//
+//  Created by ArthurShuai on 16/7/24.
+//  Copyright © 2016年 ArthurShuai. All rights reserved.
+//
+//  文件名称：预编译文件
+//  文件说明：若不使用cocoapods添加BaseSDK，需要在PROJECT info下的Configurations为Debug和Release选中Config.xcconfig文件
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+
+/**********************************
+ * 工具头文件
+ **********************************/
+#import "Public.h"//公共配置
+#import "Configuration.h"//操作配置文件，各种便捷操作定义，请于此文件设置
+#import "SDPhotoBrowserConfig.h"//图片浏览
+#import "NSDate+TimeCategory.h"//时间转换文件
+#import "LSDatePickerView.h"//时间选择器
+#import "ScanningViewController.h"//二维码/条形码扫描，需要在Info.plist文件中设置NSCameraUsageDescription
+#import "MediaHandle.h"//媒体处理,从相册读取图片、从相册读取视频、调用相机拍摄图片、调用相机拍摄视频等
+#import "LSMediaPlayer.h"//视频播放1
+#import "LSVideoPlayer.h"//视频播放2
+#import "LSCheckVersionUpdate.h"//检查应用版本升级
+/**********************************
+ *
+ **********************************/
+
+
+#endif /* PrefixHeader_pch */

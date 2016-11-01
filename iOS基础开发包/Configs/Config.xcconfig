@@ -1,0 +1,10 @@
+//
+//  Config.xcconfig
+//
+//  Created by ArthurShuai on 16/10/26.
+//  Copyright © 2016年 ArthurShuai. All rights reserved.
+//
+//  文件名称：Xcode自定义配置文件
+
+GCC_PRECOMPILE_PREFIX_HEADER = YES
+GCC_PREFIX_HEADER = $(SRCROOT)/$(PRODUCT_NAME)/BaseSDK/PrefixHeader.pch
